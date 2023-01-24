@@ -1,0 +1,165 @@
+{{--<style>
+
+    .LogoDesktop{
+        display: none;
+    }
+
+    @media(min-width:800px){
+
+        .LogoDesktop{
+
+            display: block;
+            position: absolute;
+            width: 650px;
+            height: 800px;
+            left:26%
+
+        }
+
+        .LogoDesktop > .LogoDesktop__bgCircle{
+
+            width: 86%;
+            position: absolute;
+            left: 5%;
+            top:2%;
+            opacity: 0.5;
+
+        }
+
+        .LogoDesktop > .LogoDesktop__bgCircle{
+
+            animation-name: girar;
+            animation-iteration-count: infinite;
+            animation-duration: 18s;
+        }
+
+       .LogoDesktop >  .LogoDesktop__logo{
+
+            width: 94%;
+            z-index:999;
+            position: absolute;
+            top:2%;
+            filter:drop-shadow(0px 0px 30px black);
+       }
+
+       .LogoDesktop > .LogoDesktop__text{
+
+            font-weight: bold;
+            font-size: 18px;
+            color: white;
+            text-shadow: 0px 0px 8px black;
+            position: absolute;
+            top: 47%;
+            left: 24%;
+            width: 400px;
+       }
+
+       .LogoDesktop > .LogoDesktop__button{
+
+            position: absolute;
+            width: 420px;
+            top:54.5%;
+            left:22%;
+       }
+
+       .my-btn-index{
+            height:60px;
+            font-size:20px;
+            border:2px solid white;
+            box-shadow:6px 6px 12px black;
+       }
+
+       .my-btn-index:hover{
+
+            border:2px solid #A10200;
+            background: #A10200;
+            color:white;
+       }
+    }
+
+    @media(min-width:1400px){
+
+        .LogoDesktop{
+
+            display: block;
+            position: absolute;
+            width: 750px;
+            height: 930px;
+            left:31%
+
+        }
+
+        .LogoDesktop > .LogoDesktop__text{
+
+            font-size: 20px;
+            width: 450px;
+        }
+
+        .LogoDesktop > .LogoDesktop__button{
+
+            width: 465px;
+ 
+        }
+    }
+
+    @media(min-height:700px){
+
+        .LogoDesktop >  .LogoDesktop__logo{
+
+            top:7%;   
+        }
+
+        .LogoDesktop > .LogoDesktop__text{
+
+            top: 53%;
+
+        }
+       .LogoDesktop > .LogoDesktop__button{
+
+            top:62%;
+            
+        }
+
+    }
+
+    @keyframes girar{
+
+        0%{
+
+            transform: rotate(0deg);
+        }
+
+
+        100%{
+            transform: rotate(360deg);
+        }
+        
+    }
+
+</style>--}}
+
+<div class="LogoDesktop">
+
+    <div class="LogoDesktop__bgCircle">
+        <img width="100%" src="/assets/bg-circle-1.png" alt="Fondo logo Glowing phoenix" srcset="">
+    </div>
+
+    <div class="LogoDesktop__logo">
+        <img width="100%" src="/assets/logo-completo.webp" alt="Logo Glowing Phoenix banda de metal" srcset="">
+    </div>
+
+    <div class="LogoDesktop__text">
+        <p>Disfruta de la mejor música metal al estilo y ritmo único de Glowing Phoenix</p>
+    </div>
+
+    <div class="LogoDesktop__button">
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-outline-light my-btn-index" type="button">
+                <strong> Ver más</strong>
+            </button>
+            
+        </div>
+        
+    </div>
+</div>
