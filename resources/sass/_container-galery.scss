@@ -1,0 +1,465 @@
+.ContainerGalery{
+
+    width: 90vw;
+    height:79vh ;
+    background: #040a09eb;
+    border: 9px solid #040a0974;
+    position: absolute;
+    margin-left:5vw;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.ContainerGalery > .ContainerGalery__close{
+    width:99%;
+    height: 40px;
+    margin-left: 1%;
+    cursor:pointer;
+    position: fixed;
+    z-index: 9999;
+}
+
+
+.ContainerGalery__grid{
+
+    display: grid;
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 1%;
+    grid-template-areas: "fotos1 fotos1"
+                        "fotos2 fotos2"
+                        "fotos3 fotos3"
+                        "fotos4 fotos4";
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:200px 200px 200px 200px;
+    grid-gap: 2%; 
+    margin-bottom: 50px;
+    margin-top: 45px
+}
+
+.ContainerGalery__grid > .Grid__fotos1{
+    grid-area: fotos1;
+
+}
+
+.GaleryGridContainer1{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.GaleryGridContainer1 > .CardFotos1{
+
+    margin-left: 12px;
+    margin-right: 12px;
+    position: relative;
+    box-shadow: 5px 5px 15px black;
+    cursor: pointer;
+    
+}
+
+.GaleryGridContainer1 > .CardFotos1 > img{
+
+    width: 160px;
+    
+}
+
+.GaleryGridContainer1 > .CardFotos1 > p{
+
+    position: absolute;
+    top:85%;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 0px 18px black;
+    background: rgba(0,0,0,0.45);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+/*___________________________________________________________*/
+
+
+.ContainerGalery__grid > .Grid__fotos2{
+    grid-area: fotos2;
+
+}
+
+.GaleryGridContainer2 {
+    
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.GaleryGridContainer2 > .CardFotos2{
+
+    margin-left: 12px;
+    margin-right: 12px;
+    position: relative;
+    box-shadow: 5px 5px 15px black;
+    cursor:pointer;
+    
+}
+
+.GaleryGridContainer2 > .CardFotos2 > img{
+
+    height:153px;
+
+}
+
+.GaleryGridContainer2 > .CardFotos2 > p{
+
+    position: absolute;
+    top:87%;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 0px 18px black;
+    background: rgba(0,0,0,0.45);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+}
+
+/*_______________________________________________________________________*/
+.GaleryGridContainer3{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.GaleryGridContainer3 > .CardFotos1{
+
+    margin-left: 12px;
+    margin-right: 12px;
+    position: relative;
+    box-shadow: 5px 5px 15px black;
+    cursor: pointer;
+    
+}
+
+.GaleryGridContainer3 > .CardFotos1 > img{
+
+    width: 160px;
+    
+}
+
+.GaleryGridContainer3 > .CardFotos1 > p{
+
+    position: absolute;
+    top:85%;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 0px 18px black;
+    background: rgba(0,0,0,0.45);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+/*____________________________________________________*/
+
+
+.GaleryGridContainer4 {
+    
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.GaleryGridContainer4 > .CardFotos2{
+
+    margin-left: 12px;
+    margin-right: 12px;
+    position: relative;
+    box-shadow: 5px 5px 15px black;
+    cursor:pointer;
+    
+}
+
+.GaleryGridContainer4 > .CardFotos2 > img{
+
+    height:153px;
+
+}
+
+.GaleryGridContainer4 > .CardFotos2 > p{
+
+    position: absolute;
+    top:87%;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 0px 18px black;
+    background: rgba(0,0,0,0.45);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+}
+
+
+/*_________________________________________________________________*/
+
+.ContainerGalery__grid > .Grid__fotos3{
+    grid-area: fotos3;
+
+}
+.ContainerGalery__grid > .Grid__fotos4{
+    grid-area: fotos4;
+
+}
+
+/*_:::::::::::::::::::::*/
+
+.ContainerGalery__ViewMediaElem{
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    background: black;
+    top:0%;
+}
+
+
+
+.ContainerGalery__ViewMediaElem > .closeView{
+
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 26px;
+    height: 50px;
+    cursor:pointer;
+}
+
+.ContainerGalery__ViewMediaElem > .viewTitle{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: 70px;
+    color: white;
+    font-size: 21px;
+    align-items: center;
+    text-align: center;
+}
+
+.ContainerGalery__ViewMediaElem > .viewElement{
+
+    width: 100%;        
+    height: 60%;
+    display: flex;
+    align-items: center;
+
+}
+
+.ContainerGalery__ViewMediaElem > .viewElement > img{
+
+    width: 98%;
+    margin-left: 1%;
+    object-fit: contain;
+
+}
+
+.ContainerGalery__ViewMediaElem > .viewButtons{
+
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+    
+
+}
+
+.ContainerGalery__ViewMediaElem > .viewButtons > div{
+    font-size: 18px;
+}
+
+
+
+
+
+@media(min-width:800px){
+
+    .ContainerGalery{
+
+        width: 85vw;
+        height: 78vh;
+        margin-left:9vw;
+        margin-top: 9vh;
+        border-radius: 8px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .ContainerGalery__grid {
+        grid-template-rows: 300px 330px 300px 330px;
+
+    }
+
+    .GaleryGridContainer1 > .CardFotos1 > img {
+        width: 268px;
+    }
+
+    .GaleryGridContainer1 > .CardFotos1 > p{
+
+        font-size: 20px;
+    }
+
+
+
+
+    .GaleryGridContainer2 > .CardFotos2 > img {
+        height: 305px;
+    }
+
+    .GaleryGridContainer2 > .CardFotos2 > p{
+
+        font-size: 20px;
+    }
+
+
+    
+
+
+    .GaleryGridContainer3 > .CardFotos1 > img {
+        width: 268px;
+    }
+
+    .GaleryGridContainer3 > .CardFotos1 > p{
+
+        font-size: 20px;
+    }
+
+
+
+
+    .GaleryGridContainer4 > .CardFotos2 > img {
+        height: 305px;
+    }
+
+    .GaleryGridContainer4 > .CardFotos2 > p{
+
+        font-size: 20px;
+    }
+
+
+    /*###############__________________________*/
+
+
+    .ContainerGalery__ViewMediaElem > .viewElement {
+        width: 50%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        margin-left: 25%;
+        
+    }
+
+    .ContainerGalery__ViewMediaElem > .viewElement > img{
+
+       height: 100%;
+       width: 100%;
+
+
+        }
+
+}
+
+@media(min-width:1490px){
+    .ContainerGalery__grid {
+        grid-template-rows: 330px 360px 330px 360px;
+
+    }
+
+    .GaleryGridContainer1 > .CardFotos1 > img {
+        width: 298px;
+    }
+
+    .GaleryGridContainer1 > .CardFotos1 > p{
+
+        font-size: 24px;
+    }
+
+
+
+
+
+    .GaleryGridContainer2 > .CardFotos2 > img {
+        height: 335px;
+    }
+
+    .GaleryGridContainer2 > .CardFotos2 > p{
+
+        font-size: 24px;
+    }
+
+
+
+
+
+    .GaleryGridContainer3 > .CardFotos1 > img {
+        width: 298px;
+    }
+
+    .GaleryGridContainer3 > .CardFotos1 > p{
+
+        font-size: 24px;
+    }
+
+
+    .GaleryGridContainer4 > .CardFotos2 > img {
+        height: 335px;
+    }
+
+    .GaleryGridContainer4 > .CardFotos2 > p{
+
+        font-size: 24px;
+    }
+
+
+
+}

@@ -36,7 +36,7 @@
 <div class="Background" style="width:100vw;height:100vh">
 
     <video id="video" muted webkit-playsinline loop autoplay preload="none" poster>
-        <source src="/assets/Secuencia-coro-1.mp4" />
+        <source src="/assets/bg-reducido.mp4" />
     </video>
 
      <div class="my-bg-black"></div>

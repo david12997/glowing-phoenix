@@ -1,0 +1,124 @@
+/* Nav Desktop component*/
+
+.navDesktop{
+
+    display: none;
+}
+
+@media(min-width:800px){
+
+    .navDesktop{
+
+        width: 100px;
+        height: 100%;
+        display: block;
+        position: absolute;
+    }
+
+    .navDesktop > .navDesktop__line{
+
+        height: 100%;
+        width: 1px;
+        background:white;
+        position: absolute;
+        left: 45px;
+
+    }
+
+    .navDesktop > .navDesktop__items{
+
+        width: 200px;
+        height: 100vh;
+        position: relative;
+    }
+
+    .navDesktop > .navDesktop__items >  .navDesktop__item{
+
+        width: 10px;
+        border-radius: 5px;
+        height: 48px;
+        background: white;
+        margin-left: 40.5px;
+        display:flex;
+        color:white;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 999;
+        position: relative;
+        padding: 5px;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 46%;
+        margin-top: 9%;
+        cursor:pointer;
+        color: transparent;
+
+
+    }
+
+    .navDesktop > .navDesktop__items >  .navDesktop__item:hover{
+        width: 180px;
+        color:#BD0012;
+
+        .navDesktop__icon > svg > path{
+
+            fill: #BD0012;
+        }
+    }
+
+    .navDesktop > .navDesktop__items >  .navDesktop__item > p{
+
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    
+
+    .navDesktop > .navDesktop__items >  .navDesktop__item > .navDesktop__icon{
+
+        margin-left: 15px;
+    }
+}
+
+@media(min-height:740px){
+
+    
+    .navDesktop > .navDesktop__items >  .navDesktop__item{
+
+        margin-bottom: 69%;
+        margin-top: 10%
+    }
+}
+
+@media(min-height:780px){
+
+    
+    .navDesktop > .navDesktop__items >  .navDesktop__item{
+
+        margin-bottom: 70%;
+        margin-top: 12%
+    }
+}
+
+@media(min-height:860px){
+
+    
+    .navDesktop > .navDesktop__items >  .navDesktop__item{
+
+        margin-bottom: 89%;
+        margin-top: 15%
+    }
+}
+
+@media(min-height:960px){
+
+    
+    .navDesktop > .navDesktop__items >  .navDesktop__item{
+
+        margin-bottom: 102%;
+        margin-top: 20%
+    }
+}
+
+
+/* Nav Desktop component */

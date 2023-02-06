@@ -1,0 +1,32 @@
+/* languageDesktop component*/
+
+.LanguageDesktop{
+
+
+    display: none;
+
+}
+
+@media(min-width:800px){
+
+
+    .LanguageDesktop{
+
+        color:white;
+        position: absolute;
+        z-index:99;
+        left:calc(100% - 235px);
+        top:4%;
+        display: flex;
+        justify-content: end;
+        width: 210px;
+        cursor:pointer;
+    }
+
+    .LanguageDesktop > .google{
+
+        margin-right: 20px;
+    }
+}
+
+/* languageDesktop component*/

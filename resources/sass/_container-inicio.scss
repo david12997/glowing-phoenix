@@ -1,0 +1,382 @@
+.ContainerInicio{
+
+    width: 90vw;
+    height:79vh ;
+    background: #040a09eb;
+    border: 9px solid #040a0974;
+    position: absolute;
+    margin-left:5vw;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.ContainerInicio > .ContainerInicio__close{
+    width:99%;
+    height: 40px;
+    margin-left: 1%;
+    cursor:pointer;
+    position: fixed;
+    z-index: 9999;
+}
+
+.ContainerInicio >  .ContainerInicio__grid_1{
+    width: 90%;
+    margin-left:5%;
+    height: 102vh;
+    display: grid;
+    grid-template-areas: "title title"
+                        "video_main  video_main"
+                        "video_second  video_second"
+                        "parrafo parrafo"
+                        "buttons buttons";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 7% 26% 18% 30% 18%;
+    grid-gap: 6px;
+    margin-top: 45px;
+
+        
+}
+
+.ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__title{
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #BD0012;
+    min-width: 280px;
+}
+
+.ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__videosMain{
+    grid-area: video_main;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__videosMain > img{
+    width: 100%;
+    height: 96%;
+    margin-left:-6px;
+}
+
+.icon_videosMain{
+
+    position: absolute;
+    top: 33%;
+}
+
+.ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__videosSecond{
+    grid-area: video_second;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    align-items: center;
+    position: relative;
+    cursor:pointer;
+}
+
+
+.ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__videosSecond > .videosSecond__video{
+
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__videosSecond > .videosSecond__video > svg{
+
+    position: absolute;
+    top:18%;
+    left: 31%;
+}
+
+
+.ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__parrafo{
+
+    grid-area: parrafo;
+    color:white;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    overflow-y: scroll;
+}
+
+.ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__buttons{
+    grid-area: buttons;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__buttons >  div{
+
+    width: 100%;
+    height: 60px;
+    margin: 2px;
+    margin-top:11px;
+    padding-top: 15px;
+    font-size: 16px;
+    
+}
+
+.ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__buttons > .btn-danger{
+
+    background: #BD0012;
+    font-weight: bold;
+
+}
+
+.ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__buttons > .btn-outline-light:hover{
+
+    color: #040A09;
+
+    svg > path{
+        fill: #040A09;
+        
+    }
+
+}
+.ContainerInicio > .ContainerInicio__integrantes{
+
+    width: 91%;
+    margin-left: 5%;
+
+}
+
+.ContainerInicio > .ContainerInicio__integrantes > .Integrantes__title{
+
+    width: 100%;
+    height: 50px;
+    font-size: 26px;
+    color: #BD0012;
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 8px;
+    margin-bottom:20px;
+
+}
+.ContainerInicio > .ContainerInicio__integrantes >  .integrantes__container{
+
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+
+.ContainerInicio > .ContainerInicio__integrantes >  .integrantes__container > .integrante{
+
+    min-width: 290px;
+    position: relative;
+    margin-bottom: 72px;
+}
+
+.ContainerInicio > .ContainerInicio__integrantes >  .integrantes__container > .integrante > img{
+    filter: contrast(1.5);
+}
+.ContainerInicio > .ContainerInicio__integrantes >  .integrantes__container > .integrante > .integrante__instrumento , .integrante__cantante , .integrante__name{
+
+    position: absolute;
+    color:white;
+}
+
+.ContainerInicio > .ContainerInicio__integrantes >  .integrantes__container > .integrante > .integrante__cantante {
+
+    top:3%;
+    left:3.5%;
+    font-size:15px;
+}
+
+.ContainerInicio > .ContainerInicio__integrantes >  .integrantes__container > .integrante > .integrante__instrumento {
+
+    top:15%;
+    left:3%;
+    font-size:15px;
+}
+
+.ContainerInicio > .ContainerInicio__integrantes >  .integrantes__container > .integrante > .integrante__name {
+
+    top:90%;
+    width: 100%;
+    height:50px;
+    font-size:17px;
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #BD0012;
+}
+
+.ContainerInicio > .ContainerInicio__toques{
+
+    width: 92%;
+    margin-left: 4%;
+    height: 445px;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.ContainerInicio > .ContainerInicio__redes{
+
+
+    width: 95%;
+    margin-left: 3%;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+
+.ContainerInicio > .ContainerInicio__toques > img{
+
+    height: 400px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.ContainerInicio > .ContainerInicio__titleToques{
+
+    width: 91%;
+    margin-left: 5%;
+    height: 50px;
+    font-size: 26px;
+    color: #BD0012;
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 8px;
+}
+
+
+@media(min-width:800px){
+
+    .ContainerInicio{
+
+        width: 85vw;
+        height: 78vh;
+        margin-left:9vw;
+        margin-top: 9vh;
+        border-radius: 8px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+
+    .ContainerInicio >  .ContainerInicio__grid_1{
+
+        height: 75vh;
+        grid-template-areas: "title video_main"
+                            "parrafo  video_main"
+                            "parrafo  video_second"
+                            "buttons video_second";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 13% 45% 19% 16%;
+        grid-gap: 9px;
+
+
+        
+    }
+
+    .ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__title{
+        justify-content: start;
+
+    }
+
+
+    .ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__buttons{
+        grid-area: buttons;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+
+    .ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__buttons >  div{
+
+        width: 48%;
+        height: 60px;
+        margin: 2px;
+        margin-top:11px;
+        padding-top: 15px;
+        font-size: 17px;
+        
+    }
+
+    .ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__buttons > .btn-danger{
+
+        background: #BD0012;
+        font-weight: bold;
+
+    }
+    
+    .ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__buttons > .btn-outline-light:hover{
+
+        color: #040A09;
+
+        svg > path{
+            fill: #040A09;
+            
+        }
+
+    }
+
+
+    .ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__videosMain > img{
+        margin-top: 1%;
+    }
+
+    .icon_videosMain{
+
+        top: 40%;
+    }
+
+}
+
+@media(min-width:1480px){
+
+    .ContainerInicio >  .ContainerInicio__grid_1{
+        width: 90%;
+        margin-left:5%;
+        height: 70vh;
+        display: grid;
+        grid-template-areas: "title video_main"
+                            "parrafo  video_main"
+                            "parrafo  video_second"
+                            "buttons video_second";
+        grid-template-columns: 0.9fr 1.1fr;
+        grid-template-rows: 15% 50% 10% 20%;
+        grid-gap: 9px;
+        margin-top: 30px;
+
+        
+    }
+
+    .ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__parrafo{
+
+        font-size: 22px;
+
+    }
+
+    .ContainerInicio >  .ContainerInicio__grid_1 > .ContainerInicio__buttons >  div{
+
+
+        font-size: 19px;
+        
+    }
+
+
+}

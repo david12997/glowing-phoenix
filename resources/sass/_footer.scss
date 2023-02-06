@@ -1,0 +1,50 @@
+/* Footer component*/
+
+.footer{
+
+    position: absolute;
+    width: 95%;
+    margin-left: 2.3%;
+    top:88%;
+}
+
+.footer > .footer__iconsMedia{
+
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3px;
+    cursor:pointer;
+
+
+}
+
+.footer > .footer__politicas, .footer__derechos{
+    color:white;
+    display: flex;
+    text-shadow: 0px 0px 8px black;
+   
+}
+
+.footer > .footer__derechos{
+    
+    justify-content: center;
+}
+
+.footer > .footer__politicas{
+
+    justify-content: space-around;
+    width: 85%;
+    margin-left: 8%;
+}
+
+@media(min-width:800px){
+
+    .footer{
+
+        width: 400px;
+        margin-left: calc(50% - 180px);
+        
+    }
+}
+
+/* Footer component*/

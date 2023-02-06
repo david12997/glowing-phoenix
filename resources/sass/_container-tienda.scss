@@ -1,0 +1,35 @@
+.ContainerTienda{
+
+    width: 90vw;
+    height:79vh ;
+    background: #040a09eb;
+    border: 9px solid #040a0974;
+    position: absolute;
+    margin-left:5vw;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.ContainerTienda > .ContainerTienda__close{
+    width:99%;
+    height: 40px;
+    margin-left: 1%;
+    cursor:pointer;
+    position: fixed;
+    z-index: 9999;
+}
+
+@media(min-width:800px){
+
+    .ContainerTienda{
+
+        width: 85vw;
+        height: 78vh;
+        margin-left:9vw;
+        margin-top: 9vh;
+        border-radius: 8px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}

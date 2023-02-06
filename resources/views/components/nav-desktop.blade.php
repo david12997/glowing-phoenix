@@ -1,101 +1,4 @@
 
-{{--<style>
-    .navDesktop{
-
-        display: none;
-    }
-
-    @media(min-width:800px){
-
-        .navDesktop{
-
-            width: 100px;
-            height: 100%;
-            display: block;
-            position: absolute;
-        }
-
-        .navDesktop > .navDesktop__line{
-
-            height: 100%;
-            width: 1px;
-            background:white;
-            position: absolute;
-            left: 45px;
-
-        }
-
-        .navDesktop > .navDesktop__items{
-
-            width: 200px;
-            height: 100vh;
-            position: relative;
-        }
-
-        .navDesktop > .navDesktop__items >  .navDesktop__item{
-
-            width: 10px;
-            border-radius: 5px;
-            height: 45px;
-            background: white;
-            margin-left: 40.5px;
-            display:flex;
-            color:white;
-            font-size: 18px;
-            font-weight: bold;
-            z-index: 999;
-            position: relative;
-            padding: 5px;
-            justify-content: start;
-            align-items: center;
-            margin-bottom: 46%;
-            margin-top: 9%;
-            cursor:pointer;
-        }
-        .navDesktop > .navDesktop__items >  .navDesktop__item > p{
-
-            margin-top: 15px;
-            margin-left: 15px;
-            color: transparent;
-        }
-
-        .navDesktop > .navDesktop__items >  .navDesktop__item > .navDesktop__icon{
-
-            margin-left: 15px;
-        }
-    }
-
-    @media(min-height:740px){
-
-        
-        .navDesktop > .navDesktop__items >  .navDesktop__item{
-
-            margin-bottom: 69%;
-            margin-top: 10%
-        }
-    }
-
-    @media(min-height:780px){
-
-        
-        .navDesktop > .navDesktop__items >  .navDesktop__item{
-
-            margin-bottom: 70%;
-            margin-top: 12%
-        }
-    }
-
-    @media(min-height:860px){
-
-        
-        .navDesktop > .navDesktop__items >  .navDesktop__item{
-
-            margin-bottom: 89%;
-            margin-top: 15%
-        }
-    }
-
-</style>--}}
 
 <div class="navDesktop">
    <div class="navDesktop__line"></div>
@@ -115,7 +18,7 @@
         </div>
         <br>
 
-        <div class="navDesktop__item">
+        <div href="/musica" class="navDesktop__item">
             <div class="navDesktop__icon  navDesktop__icon--disk">
 
                 <svg  width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -167,43 +70,3 @@
    
 </div>
 
-{{--<script>
-    const containerElements = document.getElementById('js-items-nav-desktop'),
-        navDesktopItem = document.getElementsByClassName('navDesktop__item'),
-        textNavDesktop = document.getElementsByClassName('text-nav-desktop');
-        svgIcon = document.getElementsByClassName('icon-navbar');
-
-        for(let i =0; i < navDesktopItem.length;i++){
-
-            navDesktopItem[i].addEventListener('mouseenter',()=>{
-
-                if(i === navDesktopItem.length-1){
-
-                    svgIcon[i+1].style.fill ='#AB0200';
-                    svgIcon[i+2].style.fill ='#AB0200';
-                }
-
-                navDesktopItem[i].style.width = "180px";
-                svgIcon[i].style.fill ='#AB0200';
-                textNavDesktop[i].style.color = '#AB0200';
-                
-               
-            });
-
-
-            navDesktopItem[i].addEventListener('mouseleave',()=>{
-
-                  if(i === navDesktopItem.length-1){
-
-                    svgIcon[i+1].style.fill ='white';
-                    svgIcon[i+2].style.fill ='white';
-                }
-
-                navDesktopItem[i].style.width = "10px";
-                svgIcon[i].style.fill ='white';
-                textNavDesktop[i].style.color = 'transparent';
-            })
-        }
-
-    
-</script>--}}

@@ -14,602 +14,93 @@ body {
     overflow: hidden;
 }
 
-/* Bakcground component*/
-.Background{
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.3) #040a09d7;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #040a09d7;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    border: 3px solid #040a09d7;
+  }
 
-    position: absolute;
-}
+  .screen-container{
 
-.Background > #video{
+    -webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
 
-    position:fixed;
-    min-height:100%;
-    min-width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: -1;
-    overflow: hidden;
-
-}
-
-
-.Background > .my-bg-black{
-
-    width:100vw ;
-    height: 100vh;
-    background: rgba(0,0,0,0.5); 
-    position: absolute;
-
-}
-
-/* Bakcground component*/
-
-
-/* Footer component*/
-
-.footer{
-
-    position: absolute;
-    width: 95%;
-    margin-left: 2.3%;
-    top:88%;
-}
-
-.footer > .footer__iconsMedia{
-
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 3px;
-    cursor:pointer;
+  @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
 
 
-}
-
-.footer > .footer__politicas, .footer__derechos{
-    color:white;
-    display: flex;
-    text-shadow: 0px 0px 8px black;
-   
-}
-
-.footer > .footer__derechos{
+.ContainerPage__name{
     
-    justify-content: center;
-}
-
-.footer > .footer__politicas{
-
-    justify-content: space-around;
-    width: 85%;
-    margin-left: 8%;
-}
-
-@media(min-width:800px){
-
-    .footer{
-
-        width: 400px;
-        margin-left: calc(50% - 180px);
-        
-    }
-}
-
-/* Footer component*/
-
-
-/* languageDesktop component*/
-
-.LanguageDesktop{
-
-
-    display: none;
-
-}
-
-@media(min-width:800px){
-
-
-    .LanguageDesktop{
-
-        color:white;
-        position: absolute;
-        z-index:99;
-        left:calc(100% - 235px);
-        top:4%;
-        display: flex;
-        justify-content: space-around;
-        width: 210px;
-        cursor:pointer;
-    }
-}
-
-/* languageDesktop component*/
-
-
-/* Logo Desktop component*/
-
-.LogoDesktop{
-    display: none;
-}
-
-@media(min-width:800px){
-
-    .LogoDesktop{
-
-        display: block;
-        position: absolute;
-        width: 650px;
-        height: 800px;
-        left:26%
-
-    }
-
-    .LogoDesktop > .LogoDesktop__bgCircle{
-
-        width: 86%;
-        position: absolute;
-        left: 5%;
-        top:2%;
-        opacity: 0.5;
-
-    }
-
-    .LogoDesktop > .LogoDesktop__bgCircle{
-
-        animation-name: girar;
-        animation-iteration-count: infinite;
-        animation-duration: 18s;
-    }
-
-   .LogoDesktop >  .LogoDesktop__logo{
-
-        width: 94%;
-        z-index:999;
-        position: absolute;
-        top:2%;
-        filter:drop-shadow(0px 0px 30px black);
-   }
-
-   .LogoDesktop > .LogoDesktop__text{
-
-        font-weight: bold;
-        font-size: 18px;
-        color: white;
-        text-shadow: 0px 0px 8px black;
-        position: absolute;
-        top: 47%;
-        left: 24%;
-        width: 400px;
-   }
-
-   .LogoDesktop > .LogoDesktop__button{
-
-        position: absolute;
-        width: 420px;
-        top:54.5%;
-        left:22%;
-   }
-
-   .my-btn-index{
-        height:60px;
-        font-size:20px;
-        border:2px solid white;
-        box-shadow:6px 6px 12px black;
-   }
-
-   .my-btn-index:hover{
-
-        border:2px solid #A10200;
-        background: #A10200;
-        color:white;
-   }
-}
-
-@media(min-width:1400px){
-
-    .LogoDesktop{
-
-        display: block;
-        position: absolute;
-        width: 750px;
-        height: 930px;
-        left:31%
-
-    }
-
-    .LogoDesktop > .LogoDesktop__text{
-
-        font-size: 20px;
-        width: 450px;
-    }
-
-    .LogoDesktop > .LogoDesktop__button{
-
-        width: 465px;
-
-    }
-}
-
-@media(min-height:700px){
-
-    .LogoDesktop >  .LogoDesktop__logo{
-
-        top:7%;   
-    }
-
-    .LogoDesktop > .LogoDesktop__text{
-
-        top: 53%;
-
-    }
-   .LogoDesktop > .LogoDesktop__button{
-
-        top:62%;
-        
-    }
-
-}
-
-@keyframes girar{
-
-    0%{
-
-        transform: rotate(0deg);
-    }
-
-
-    100%{
-        transform: rotate(360deg);
-    }
-    
-}
-/* Logo Desktop component*/
-
-
-/* Logo Mobile component */
-
-.LogoMobile{
-
     position: absolute;
-    width: 100%;
-    height: 80%;
-
-}
-
-.LogoMobile > .LogoMobile__bgCircle{
-
-    position: absolute;
-    opacity: 0.5;
-    width: 76%;
-    left:11%;
-    top:10%;
-
-}
-
-.LogoMobile > .LogoMobile__bgCircle > img{
-
-    animation-name: girarMobile;
-    animation-iteration-count: infinite;
-    animation-duration: 18s;
-}
-
-
-.LogoMobile > .LogoMobile__logo{
-
-    position: absolute;
-    width:70%;
-    left:10%;
-
-}
-
-
-.LogoMobile > .LogoMobile__button{
-
-    position: absolute;
-    width: 340px;
-    top:80%;
-    left:4%;
-}
-
-.my-btn-index-mobile{
-    height:60px;
-    font-size:20px;
-    border:2px solid #A10200;
-    box-shadow:6px 6px 12px black;
-    background: #A10200;
-}
-
-.my-btn-index-mobile:hover{
-    background: #A10200;
-}
-
-.LogoMobile > .LogoMobile__text{
-
-    font-weight: bold;
-    font-size: 17px;
     color: white;
-    text-shadow: 0px 0px 8px black;
-    position: absolute;
-    top: 67%;
-    left: 7%;
-    width: 330px;
-}
-
-@media(min-width:800px){
-
-    .LogoMobile{
-
-        display: none;
-    }
-}
-
-    @keyframes girarMobile{
-
-    0%{
-
-        transform: rotate(0deg);
-    }
-
-
-    100%{
-        transform: rotate(360deg);
-    }
-    
-}
-
-
-/* Logo Mobile component*/
-
-
-/* Nav Desktop component*/
-
-.navDesktop{
-
-    display: none;
-}
-
-@media(min-width:800px){
-
-    .navDesktop{
-
-        width: 100px;
-        height: 100%;
-        display: block;
-        position: absolute;
-    }
-
-    .navDesktop > .navDesktop__line{
-
-        height: 100%;
-        width: 1px;
-        background:white;
-        position: absolute;
-        left: 45px;
-
-    }
-
-    .navDesktop > .navDesktop__items{
-
-        width: 200px;
-        height: 100vh;
-        position: relative;
-    }
-
-    .navDesktop > .navDesktop__items >  .navDesktop__item{
-
-        width: 10px;
-        border-radius: 5px;
-        height: 45px;
-        background: white;
-        margin-left: 40.5px;
-        display:flex;
-        color:white;
-        font-size: 18px;
-        font-weight: bold;
-        z-index: 999;
-        position: relative;
-        padding: 5px;
-        justify-content: start;
-        align-items: center;
-        margin-bottom: 46%;
-        margin-top: 9%;
-        cursor:pointer;
-    }
-    .navDesktop > .navDesktop__items >  .navDesktop__item > p{
-
-        margin-top: 15px;
-        margin-left: 15px;
-        color: transparent;
-    }
-
-    .navDesktop > .navDesktop__items >  .navDesktop__item > .navDesktop__icon{
-
-        margin-left: 15px;
-    }
-}
-
-@media(min-height:740px){
-
-    
-    .navDesktop > .navDesktop__items >  .navDesktop__item{
-
-        margin-bottom: 69%;
-        margin-top: 10%
-    }
-}
-
-@media(min-height:780px){
-
-    
-    .navDesktop > .navDesktop__items >  .navDesktop__item{
-
-        margin-bottom: 70%;
-        margin-top: 12%
-    }
-}
-
-@media(min-height:860px){
-
-    
-    .navDesktop > .navDesktop__items >  .navDesktop__item{
-
-        margin-bottom: 89%;
-        margin-top: 15%
-    }
-}
-
-@media(min-height:960px){
-
-    
-    .navDesktop > .navDesktop__items >  .navDesktop__item{
-
-        margin-bottom: 102%;
-        margin-top: 20%
-    }
-}
-
-
-/* Nav Desktop component */
-
-
-/* nav mobile component*/
-.navBarMobile{
-    min-width:100%;
-    height: 50px;
-    z-index: 99;
-    position: relative;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navBarMobile > .navBarMobile__screenMenu{
-
-    width: 80%;
-    height: 200vh;
-    position: absolute;
-    z-index: 99;
-    background: #06100e;
-    box-shadow: 0px 0px 50px #280100d9;
-    top:0%;
-    display: none;
-    
-
-
-}
-
-.navBarMobile > .navBarMobile__screenMenu > .google{
-
-    display: flex;
-    justify-content: end;
-    width: 80%;
-    margin-left: 17%;
-    margin-top: 10px;
-}
-
-.navBarMobile > .navBarMobile__screenMenu > .navBarMobile__iconArrow{
-
-    position: absolute;
-    z-index: 99999;
-    top:10px;
-    left:10px;
-}
-
-
-.navBarMobile > .navBarMobile__iconsGroup{
-
-    width:100px;
-    height:100%;
-}
-
-.navBarMobile > .navBarMobile__title{
-
-    color: white;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: bold;
-    text-shadow: 0px 0px 5px black;
 }
 
-.navBarMobile > .navBarMobile__iconBars{
 
-    width: 95px;
-    padding-left: 8px;
-}
 
-@media(min-width:800px){
-
-    .navBarMobile{
-        display: none;
-    }
-}
-
-.OpenMenu{
-    left:0%;
-    animation-name: openMenu;
-    animation-duration: 0.5s;
-}
-
-.CloseMenu{
-    left:-80%;
-    animation-name: closeMenu;
-    animation-duration: 0.5s;
-}
-
-@keyframes openMenu{
-
-    from{
-        left: -80%;
-       
-    }
-
-    to{
-
-        left:0%;
-    }
-}
-
-@keyframes closeMenu{
-
-    from{
-        left: 0%;
-    }
-
-    to{
-
-        left:-80%;
-        
-    }
-}
-
-/* nav mobile component*/
+@import 'background';
+@import 'footer';
+@import 'language-desktop';
+@import  'logo-desktop';
+@import 'logo-mobile';
+@import 'nav-desktop';
+@import 'nav-mobile';
+@import 'sound-desktop';
+@import 'container-inicio';
+@import 'container-musica';
+@import 'container-galery';
+@import 'container-tienda';
+@import '404';
+@import 'cart-screen';
 
 
 
-/* sound desktop component*/
-.soundDesktop{
 
-    display: none;
 
-}
 
-@media(min-width:800px){
 
-    .soundDesktop{
 
-        position: absolute;
-        display: block;
-        width: 100px;
-        height: 100px;
-        left:96%;
-        top:92%;
-        cursor:pointer
 
-    }
 
-}
 
-/* sound desktop component*/
+
+
+
 
 
 
