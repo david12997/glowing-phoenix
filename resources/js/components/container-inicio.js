@@ -34,20 +34,22 @@ export const ContainerInicio = () =>{
 
             <div class="ContainerInicio__parrafo">
                 <p>
-                    Somos una banda de thrash metal Colombiana con un album musical de 7 canciones.<br>
+                    Somos una banda de thrash metal Colombiana con un álbum musical de 7 canciones.
                     <br>
-                    Glowing Phoenix se caracteriza por ser una banda que incluye en sus letras temas tales
-                    como la libertad y la busqueda constante por cumplir sueños y metas, así mismo es una banda 
-                    que representa un poco de la vida de cada integrante.<br>
                     <br>
-                    El nombre de Glowing Phoenix esta inspirado en el caer y aprender a levantarse con mas fuerza y brillo para poder
-                    triunfar en el mundo musical.
+                    Glowing Phoenix se caracteriza por ser una banda que incluye en sus 
+                    letras temas tales como la libertad y la búsqueda constante por cumplir sueños y metas, 
+                    así mismo es una banda que representa un poco de la vida de cada integrante.
+                    <br>
+                    <br>
+                    El nombre de Glowing Phoenix está inspirado en el caer y aprender a levantarse 
+                    con más fuerza y brillo para poder triunfar en el mundo musical.
                 </p>
             </div>
 
             <div class="ContainerInicio__buttons">
                 <div id="escuchar-album" class="btn btn-danger"> 
-                    Escuchar album
+                    Escuchar álbum
                     <svg width="15" height="15" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19 0V13.1944C19 14.1743 18.6313 15.114 17.9749 15.8068C17.3185 16.4997 16.4283 16.8889 15.5 16.8889C14.5717 16.8889 13.6815 16.4997 13.0251 15.8068C12.3687 15.114 12 14.1743 12 13.1944C12 12.2146 12.3687 11.2749 13.0251 10.5821C13.6815 9.88924 14.5717 9.5 15.5 9.5C16.04 9.5 16.55 9.62667 17 9.85889V3.66278L7 5.91111V15.3056C7 16.2854 6.63125 17.2251 5.97487 17.9179C5.3185 18.6108 4.42826 19 3.5 19C2.57174 19 1.6815 18.6108 1.02513 17.9179C0.368749 17.2251 0 16.2854 0 15.3056C0 14.3257 0.368749 13.386 1.02513 12.6932C1.6815 12.0003 2.57174 11.6111 3.5 11.6111C4.04 11.6111 4.55 11.7378 5 11.97V3.16667L19 0Z" fill="white"/>
                     </svg>

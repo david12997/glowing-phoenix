@@ -21,7 +21,7 @@ export const Logo = () =>{
 
             <div class="LogoMobile__button">
                 <div class="d-grid gap-2">
-                    <button class="btn btn-danger my-btn-index-mobile" type="button">
+                    <button class="btn btn-danger my-btn-index-mobile  watch-video-now" type="button">
                         <strong> Ver video</strong>
                     </button>
                     
@@ -51,7 +51,7 @@ export const Logo = () =>{
             <div class="LogoDesktop__button">
 
                 <div class="d-grid gap-2">
-                    <button class="btn btn-outline-light my-btn-index" type="button">
+                    <button class="btn btn-danger  my-btn-index watch-video-now" type="button">
                         <strong> Ver video</strong>
                     </button>
                     
@@ -61,4 +61,17 @@ export const Logo = () =>{
         </div>
 
     `;
+}
+
+export const JsLogo = () =>{
+
+    const btnsWatchVideo = document.getElementsByClassName('watch-video-now');
+    for(let i=0; i< btnsWatchVideo.length;i++){
+
+        btnsWatchVideo[i].addEventListener('click',()=>{
+
+                window.location.href = 'https://www.youtube.com/watch?v=URSS6yOqRi0';
+
+        });
+    }
 }

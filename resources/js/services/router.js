@@ -50,13 +50,16 @@ export class Router{
 
 
                     screenContainer.innerHTML = "";
+
                     this.getPath === '/' 
                     ? 
-                    screenContainer.innerHTML = arrComponents[4]()
+                    screenContainer.innerHTML = arrComponents[4]() 
                     :
                     screenContainer.innerHTML = arrComponents[5]();
 
                     this.#ClosePage(screenContainer,arrComponents,arrElemDom,index);
+
+                    this.getPath === '/'  && arrScriptComponents[4]();
                 }
                 this.#PaintMarkers(arrElemDom,index,'unselected');
 

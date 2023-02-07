@@ -103,7 +103,7 @@ export const ContainerMusica = () =>{
                                     <path d="M11.2 5.6V4H8V8.4C7.664 8.152 7.256 8 6.8 8C6.26957 8 5.76086 8.21071 5.38579 8.58579C5.01071 8.96086 4.8 9.46957 4.8 10C4.8 10.5304 5.01071 11.0391 5.38579 11.4142C5.76086 11.7893 6.26957 12 6.8 12C7.33043 12 7.83914 11.7893 8.21421 11.4142C8.58929 11.0391 8.8 10.5304 8.8 10V5.6H11.2ZM8 0C9.05058 0 10.0909 0.206926 11.0615 0.608964C12.0321 1.011 12.914 1.60028 13.6569 2.34315C14.3997 3.08601 14.989 3.96793 15.391 4.93853C15.7931 5.90914 16 6.94942 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C6.94942 16 5.90914 15.7931 4.93853 15.391C3.96793 14.989 3.08601 14.3997 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0Z" fill="white"/>
                                 </svg>
                                     
-                                Album de 7 canciones
+                                Álbum de 7 canciones
                             </div>
                             <div class="AlbumMain__duration">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -112,10 +112,9 @@ export const ContainerMusica = () =>{
                                 Duración: 23:43 min
                             </div>
                             <div class="AlbumMain__description">
-                                Inner Desire un album en proceso de grabación que cuenta con 7 hits musicales.
-                                <br>
-                                Los temas de este album vienen llenos de energia y adrenalina, con letras 
-                                y mensajes que nadie se puede perder
+                            Inner Desire un álbum en proceso de grabación que cuenta con 7 hits musicales.
+                            <br>
+                            Los temas de este álbum vienen llenos de energía y adrenalina, con letras y mensajes que nadie se puede perder
                             </div>
                         </div>
 
@@ -362,7 +361,9 @@ export const JsContainerMusica = () =>{
 
 
 
-
+    rangeVol.addEventListener('click',()=>{
+        reproductor.Volume(rangeVol);
+    })
 
 
     volumeIcon.addEventListener('mouseenter',()=>{
@@ -370,6 +371,13 @@ export const JsContainerMusica = () =>{
         rangeVol.classList.remove('d-none');
         reproductor.Volume(rangeVol);
     });
+
+    volumeIcon.addEventListener('click',()=>{
+
+        rangeVol.classList.remove('d-none');
+        reproductor.Volume(rangeVol);
+    });
+
 
     volumeIcon.addEventListener('mouseleave',()=>{
 
@@ -406,6 +414,9 @@ export const JsContainerMusica = () =>{
 
         timeLines[0].removeEventListener('mousemove',DragPointer);
     });
+
+
+    
 
     
 

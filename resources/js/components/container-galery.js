@@ -206,7 +206,7 @@ export const JsContainerGalery = ()=>{
             
             <div class="CardFotos1 CardGalery">
 
-                <img  src="${element}" alt="" srcset="">
+                <img  loading="lazy" src="${element}" alt="" srcset="">
                 <p>${textFotos3[index]}</p>
             
             </div>
@@ -223,7 +223,7 @@ export const JsContainerGalery = ()=>{
 
         CardFotos4 = `
             <div class="CardFotos2 CardGalery">
-                <img   src="${element}" alt="" srcset="">
+                <img  loading="lazy"  src="${element}" alt="" srcset="">
                 <p>${textFotos4[index]}</p>
             </div>
         

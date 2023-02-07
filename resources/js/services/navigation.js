@@ -1,6 +1,6 @@
 
 import { Router } from "./router";
-import { Logo } from "../components/logo";
+import { JsLogo, Logo } from "../components/logo";
 import { ContainerInicio, JsContainerInicio } from "../components/container-inicio";
 import { ContainerMusica, JsContainerMusica } from "../components/container-musica";
 import { ContainerGalery, JsContainerGalery } from "../components/container-galery";
@@ -15,7 +15,7 @@ const linksDesktop = document.getElementsByClassName('navDesktop__item');
 export const routes = ['/inicio','/musica','/galeria','/tienda'];
 const router = new Router(window.location,routes);
 export const components = [ContainerInicio,ContainerMusica,ContainerGalery,ContainerTienda,Logo,Container404];
-export const scriptComponents = [JsContainerInicio,JsContainerMusica,JsContainerGalery,JsContainerTienda,JsContainerInicio];
+export const scriptComponents = [JsContainerInicio,JsContainerMusica,JsContainerGalery,JsContainerTienda,JsLogo];
 export const domain ='https://glowingphoenix.co/';
 export const song ='https://glowingphoenix.co/assets/audio/inner-desire/my-own-demon-compresed.mp3';
 export const reproductor = new Reproductor(song);

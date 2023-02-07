@@ -1,7 +1,7 @@
 .ContainerMusica{
 
     width: 90vw;
-    height:79vh ;
+    height:76vh ;
     background: #040a09eb;
     border: 9px solid #040a0974;
     position: absolute;
@@ -317,7 +317,7 @@
     border-radius: 15px;
     background: white;
     position: absolute;
-    top:125%;
+    top:123%;
     left:0%;
     cursor: pointer;
     .Line{
@@ -884,18 +884,18 @@
 
     .ContainerMusica__grid > .ContainerMusica__reproductor > .Reproductor > .Reproductor__titleSong {
         font-size: 26px;
-        left: 221px;
+        left: 241px;
     }
     .ContainerMusica__grid > .ContainerMusica__reproductor > .Reproductor > .Reproductor__album {
         font-size: 16px;
         top: 51px;
-        left: 223px;
+        left: 243px;
     }
 
     .ContainerMusica__grid > .ContainerMusica__reproductor > .Reproductor > .Reproductor__duration {
         font-size: 16px;
         top: 78px;
-        left: 221px;
+        left: 241px;
     }
     .ContainerMusica__grid > .ContainerMusica__reproductor > .Reproductor > .Reproductor__controls {
         width: 245px;

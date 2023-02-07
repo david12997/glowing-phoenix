@@ -28,7 +28,7 @@ export const ContainerTienda = () =>{
         <br>
         <lottie-player src="/assets/animations/web-construction.json" background="transparent" speed="1" style="width:100%; height: 400px;"  loop autoplay></lottie-player>
         <span style="font-size:20px;width:100%;display:flex;justify-content:center;color:white;text-align:center;">
-            Sitio web disponible proximamente...
+            Sitio web disponible próximamente...
         </span>
 
     </div>
